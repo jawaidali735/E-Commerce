@@ -19,7 +19,7 @@ const Navbar2 = () => {
         <div className="flex items-center gap-4 pl-4 sm:pl-20">
           <div className="pr-8 text-[30px] sm:text-[34px] font-semibold font-josefin">Hekto</div>
           
-          <Link href="/" className="text-[#FB2E86] font-[14px] hidden sm:inline-block sm:font-[16px] hover:underline underline-offset-4 ">
+          <Link href="/#" className="text-[#FB2E86] font-[14px] hidden sm:inline-block sm:font-[16px] hover:underline underline-offset-4 ">
             Home
           </Link>
           <Link href="/" className="text-[14px] sm:text-[16px] hidden sm:inline-block hover:text-[#FB2E86] hover:underline underline-offset-4">Pages</Link>
@@ -27,8 +27,8 @@ const Navbar2 = () => {
           <Link href="/" className="text-[14px] sm:text-[16px] hidden sm:inline-block hover:text-[#FB2E86] hover:underline underline-offset-4">Products</Link>
           <Link href="/" className="text-[14px] sm:text-[16px] hidden sm:inline-block hover:text-[#FB2E86] hover:underline underline-offset-4">Blog</Link>
          
-          <Link href="/" className="text-[14px] sm:text-[16px] hidden sm:inline-block hover:text-[#FB2E86] hover:underline underline-offset-4">Shop</Link>
-          <Link href="/" className="text-[14px] sm:text-[16px] hidden sm:inline-block hover:text-[#FB2E86] hover:underline underline-offset-4">Contact</Link>
+          <Link href="/shop" className="text-[14px] sm:text-[16px] hidden sm:inline-block hover:text-[#FB2E86] hover:underline underline-offset-4">Shop</Link>
+          <Link href="/contact" className="text-[14px] sm:text-[16px] hidden sm:inline-block hover:text-[#FB2E86] hover:underline underline-offset-4">Contact</Link>
         </div>
 
         <div className="relative hidden sm:block lg:ml-40">
@@ -56,8 +56,9 @@ const Navbar2 = () => {
               <Link href="/" className="text-[16px]">Pages</Link>
               <Link href="/" className="text-[16px]">Products</Link>
               <Link href="/" className="text-[16px]">Blog</Link>
-              <Link href="/shop-grid" className="text-[16px]">Shop</Link>
-              <Link href="/" className="text-[16px]">Contact</Link>
+              <Link href="/shopp" className="text-[16px]">Shop</Link>
+              <Link href="/contact" className="text-[16px]">Contact</Link>
+             
             </div>
           </SheetContent>
         </Sheet>

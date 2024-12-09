@@ -110,7 +110,7 @@ const productData: Product[]  = [
   },
 ];
 
-const ProductDisplay = () => {
+const Shop = () => {
   const [itemsPerPage, setItemsPerPage] = useState(12);  
                                         // here i can add as many as i want to show cards or products.
                                         // yeha agar change hoga 12 ki jaga p masal ki tor par 10 tu neche bhi jaege 10 likh hoga to look good
@@ -162,7 +162,7 @@ const ProductDisplay = () => {
       {/* mene asko aisa banya hai take bar abr use kar skon props ke tor par ab mene wah heading define karlia hai ab just jaha jah call karwa ke heading change kar donga */}
 
       <div className="p-4 sm:p-6 md:p-8 max-w-[1177px] mx-auto">
-        <div className="flex flex-wrap justify-between items-center mb-4">
+        <div className="flex flex-wrap justify-between items-center mb-28">
           <div className="mb-2 md:mb-0">
             <h2 className="text-[18px] sm:text-[22px] font-josefin text-[#151875] font-semibold">
               Ecommerce Accessories & Fashion Items
@@ -304,7 +304,7 @@ const ProductDisplay = () => {
   );
 };
 
-export default ProductDisplay;
+export default Shop;
 
 // as main jab list main click kare tu list khulana chaoye i added something but not fully like the desimned templete
 // Sir ne bhut mushkil template dedya hai mere number ke hesab se. hahahaha
