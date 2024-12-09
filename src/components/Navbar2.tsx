@@ -56,7 +56,7 @@ const Navbar2 = () => {
               <Link href="/" className="text-[16px]">Pages</Link>
               <Link href="/" className="text-[16px]">Products</Link>
               <Link href="/" className="text-[16px]">Blog</Link>
-              <Link href="/" className="text-[16px]">Shop</Link>
+              <Link href="/shop-grid" className="text-[16px]">Shop</Link>
               <Link href="/" className="text-[16px]">Contact</Link>
             </div>
           </SheetContent>
