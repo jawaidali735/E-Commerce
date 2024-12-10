@@ -17,18 +17,18 @@ const Navbar2 = () => {
     <div className="max-w-[1177px] px-6 sm:px-16 mx-auto mt-none overflow-hidden">
       <div className="flex justify-between items-center pt-6">
         <div className="flex items-center gap-4 pl-4 sm:pl-20">
-          <div className="pr-8 text-[30px] sm:text-[34px] font-semibold font-josefin">Hekto</div>
+          <div className="pr-8 text-[30px] sm:text-[34px] font-semibold text-[#0D0E43] font-josefin">Hekto</div>
           
-          <Link href="/#" className="text-[#FB2E86] font-[14px] hidden sm:inline-block sm:font-[16px] hover:underline underline-offset-4 ">
+          <Link href="/#" className="text-[#FB2E86] font-[14px] font-lato  hidden sm:inline-block sm:font-[16px] hover:underline underline-offset-4  ">
             Home
           </Link>
-          <Link href="/" className="text-[14px] sm:text-[16px] hidden sm:inline-block hover:text-[#FB2E86] hover:underline underline-offset-4">Pages</Link>
+          <Link href="/" className="text-[14px] sm:text-[16px] hidden font-lato text-[#0D0E43]  sm:inline-block hover:text-[#FB2E86] hover:underline underline-offset-4">Pages</Link>
           
-          <Link href="/" className="text-[14px] sm:text-[16px] hidden sm:inline-block hover:text-[#FB2E86] hover:underline underline-offset-4">Products</Link>
-          <Link href="/" className="text-[14px] sm:text-[16px] hidden sm:inline-block hover:text-[#FB2E86] hover:underline underline-offset-4">Blog</Link>
+          <Link href="/" className="text-[14px] sm:text-[16px] hidden font-lato text-[#0D0E43]  sm:inline-block hover:text-[#FB2E86] hover:underline underline-offset-4">Products</Link>
+          <Link href="/" className="text-[14px] sm:text-[16px] hidden sm:inline-block hover:text-[#FB2E86] hover:underline underline-offset-4 text-[#0D0E43]">Blog</Link>
          
-          <Link href="/shop" className="text-[14px] sm:text-[16px] hidden sm:inline-block hover:text-[#FB2E86] hover:underline underline-offset-4">Shop</Link>
-          <Link href="/contact" className="text-[14px] sm:text-[16px] hidden sm:inline-block hover:text-[#FB2E86] hover:underline underline-offset-4">Contact</Link>
+          <Link href="/shop" className="text-[14px] sm:text-[16px] hidden font-lato sm:inline-block hover:text-[#FB2E86] hover:underline underline-offset-4 text-[#0D0E43]">Shop</Link>
+          <Link href="/contact" className="text-[14px] sm:text-[16px] hidden  font-lato sm:inline-block hover:text-[#FB2E86] hover:underline underline-offset-4 text-[#0D0E43]">Contact</Link>
         </div>
 
         <div className="relative hidden sm:block lg:ml-40">
@@ -42,22 +42,22 @@ const Navbar2 = () => {
 
         <Sheet>
           <SheetTrigger>
-            <IoMenu className="text-[#FB2E86] text-xl sm:hidden" />
+            <IoMenu className="text-[#FB2E86] text-3xl sm:hidden" />
           </SheetTrigger>
           <SheetContent className="sm:hidden w-[70vw] max-w-[300px]">
             <SheetHeader>
-              <SheetTitle>Menu</SheetTitle>
+              <SheetTitle className="font-josefin text-[#0D0E43] ">Hekto</SheetTitle>
               <SheetDescription>
                 Choose your desired page
               </SheetDescription>
             </SheetHeader>
             <div className="flex flex-col gap-4 p-4">
-              <Link href="/" className="text-[16px]">Home</Link>
-              <Link href="/" className="text-[16px]">Pages</Link>
-              <Link href="/" className="text-[16px]">Products</Link>
-              <Link href="/" className="text-[16px]">Blog</Link>
-              <Link href="/shopp" className="text-[16px]">Shop</Link>
-              <Link href="/contact" className="text-[16px]">Contact</Link>
+              <Link href="/" className="text-[#0D0E43] font-lato text-[16px]">Home</Link>
+              <Link href="/" className="text-[#0D0E43] font-lato text-[16px]">Pages</Link>
+              <Link href="/" className="text-[#0D0E43] font-lato text-[16px]">Products</Link>
+              <Link href="/" className="text-[#0D0E43] font-lato text-[16px]">Blog</Link>
+              <Link href="/shop" className="text-[#0D0E43] font-lato text-[16px]">Shop</Link>
+              <Link href="/contact" className="text-[#0D0E43] font-lato text-[16px]">Contact</Link>
              
             </div>
           </SheetContent>

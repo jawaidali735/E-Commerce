@@ -7,6 +7,7 @@ import { FaSearchPlus } from "react-icons/fa";
 import Image from "next/image";
 import { FaList, FaTh } from "react-icons/fa";
 import PageHeader from "@/components/PageHeader";
+import Logos from "@/components/Logos"
 
 
 
@@ -299,6 +300,9 @@ const Shop = () => {
             </div>
           ))}
         </div>
+
+          <Logos/>
+
       </div>
     </section>
   );

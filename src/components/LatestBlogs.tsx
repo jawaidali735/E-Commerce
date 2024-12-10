@@ -2,6 +2,7 @@ import { FaCalendarAlt, FaPen } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 
+
 const LatestBlog = () => {
   const blogs = [
     {
@@ -40,9 +41,9 @@ const LatestBlog = () => {
             <Image
               src={blog.image}
               alt={blog.title}
-              width={40}
-              height={40}
-              className="w-full h-40 object-cover rounded-t-lg"
+              width={500}
+              height={500}
+              className="w-full h-[255px] object-cover rounded-t-[8px]"
             />
          
             <div className="p-4 pr-6">

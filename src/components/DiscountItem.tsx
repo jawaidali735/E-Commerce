@@ -31,10 +31,10 @@ const DiscountItem = () => {
       </div>
 
       
-      <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-8">
+      <div className="flex flex-col-reverse lg:flex-row  items-center lg:items-start gap-8">
        
-        <div className="text-center lg:text-left">
-          <h3 className="text-[28px] sm:text-[35px] font-bold text-[#151875] mb-4">
+        <div className="text-center lg:text-left lg:mt-10">
+          <h3 className="text-[28px] sm:text-[35px] font-bold whitespace-nowrap text-[#151875] mb-4">
             20% Discount On All Products
           </h3>
           <p className="text-[18px] sm:text-[21px] mb-4 text-[#FB2E86]">
@@ -70,13 +70,13 @@ const DiscountItem = () => {
         </div>
 
       
-        <div>
+        <div className="lg:mt-[-50px]">
           <Image
             src="/sofa.png"
             alt="Discount Item"
-            width={500}
+            width={1000}
             height={500}
-            className="mx-auto w-full sm:w-3/4 lg:w-full"
+            className="mx-auto w-full sm:w-3/4  lg:h-[500px] lg:w-[1214px]"
           />
         </div>
       </div>
