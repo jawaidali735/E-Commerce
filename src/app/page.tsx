@@ -22,7 +22,7 @@ export default function Home() {
       <Hero />
       <Products />
       <ProductList />
-      <SupportSection />
+      <SupportSection heading=" What Shopex Offer!"/>
       <UniqueFeatures />
       <TrendingProducts />
       <TrendingProducts2 />

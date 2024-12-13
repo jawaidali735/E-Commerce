@@ -1,3 +1,4 @@
+import Logos from "@/components/Logos";
 import PageHeader from "@/components/PageHeader";
 import Image from "next/image";
 
@@ -113,6 +114,7 @@ export default function Contact() {
 
 
       </div>
+      <Logos/>
     </section>
   );
 }

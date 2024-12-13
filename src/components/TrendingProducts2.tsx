@@ -1,10 +1,12 @@
 import React from "react";
 import Image from "next/image";
-const executiveChairs = [
-  { name: "Executive Seat Chair 1", price: "$39.00", image: "/exec1.png" },
-  { name: "Executive Seat Chair 2", price: "$39.00", image: "/exec2.png" },
-  { name: "Executive Seat Chair 3", price: "$39.00", image: "/exec3.png" },
-];
+import { productData } from "./Data";
+
+// const executiveChairs = [
+//   { name: "Executive Seat Chair 1", price: "$39.00", image: "/exec1.png" },
+//   { name: "Executive Seat Chair 2", price: "$39.00", image: "/exec2.png" },
+//   { name: "Executive Seat Chair 3", price: "$39.00", image: "/exec3.png" },
+// ];
 
 const TrendingProducts2 = () => {
   return (
@@ -40,7 +42,7 @@ const TrendingProducts2 = () => {
 
         <div className="p-4 shadow-lg w-full h-[270px] flex flex-col justify-between">
           <div className="grid grid-cols-1 gap-4 overflow-hidden">
-            {executiveChairs.map((chair, index) => (
+            {productData.executiveChairs.map((chair, index) => (
               <div
                 key={index}
                 className="flex items-center justify-between overflow-hidden"

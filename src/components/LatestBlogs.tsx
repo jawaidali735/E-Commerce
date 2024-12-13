@@ -68,7 +68,7 @@ const LatestBlog = () => {
               <p className="text-gray-600 text-sm mb-4">{blog.description}</p>
              
               
-              <Link href="#" className="hover:text-[#FB2E86] font-medium hover:underline text-[#151875]">
+              <Link href="/blogs" className="hover:text-[#FB2E86] font-medium hover:underline text-[#151875]">
                 Read More
               </Link>
             </div>

@@ -31,11 +31,14 @@ const supports = [
   },
 ];
 
-const SupportSection = () => {
+type  HeadingProps = {
+  heading: string;
+}
+const SupportSection = ({ heading }:HeadingProps) => {
   return (
     <section className="p-8 mt-16 max-w-[1177px] mx-auto">
       <h2 className="text-[42px] font-semibold text-center mb-8 font-josefin text-[#151875]">
-        What Shopex Offer!
+      { heading }
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 place-items-center">
         {supports.map((support) => (

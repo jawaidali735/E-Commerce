@@ -3,14 +3,16 @@ import { PiShoppingCartSimple } from "react-icons/pi";
 import { GoHeart } from "react-icons/go";
 import { FaSearchPlus } from "react-icons/fa";
 import Image from "next/image";
-const products = [
-  { id: 1, name: "Comfort Handy Craft", price: "$49.00", oldPrice: "$65.00", image: "/imageA.png" },
-  { id: 2, name: "Comfort Handy Craft", price: "$49.00", oldPrice: "$65.00", image: "/imageB.png" },
-  { id: 3, name: "Comfort Handy Craft", price: "$42.00", oldPrice: "$65.00", image: "/imageC.png" },
-  { id: 4, name: "Comfort Handy Craft", price: "$42.00", oldPrice: "$65.00", image: "/imageD.png" },
-  { id: 5, name: "Comfort Handy Craft", price: "$42.00", oldPrice: "$65.00", image: "/imageE.png" },
-  { id: 6, name: "Comfort Handy Craft", price: "$42.00", oldPrice: "$65.00", image: "/imageF.png" },
-];
+import Link from "next/link";
+// const products = [
+//   { id: 1, name: "Comfort Handy Craft", price: "$49.00", oldPrice: "$65.00", image: "/imageA.png" },
+//   { id: 2, name: "Comfort Handy Craft", price: "$49.00", oldPrice: "$65.00", image: "/imageB.png" },
+//   { id: 3, name: "Comfort Handy Craft", price: "$42.00", oldPrice: "$65.00", image: "/imageC.png" },
+//   { id: 4, name: "Comfort Handy Craft", price: "$42.00", oldPrice: "$65.00", image: "/imageD.png" },
+//   { id: 5, name: "Comfort Handy Craft", price: "$42.00", oldPrice: "$65.00", image: "/imageE.png" },
+//   { id: 6, name: "Comfort Handy Craft", price: "$42.00", oldPrice: "$65.00", image: "/imageF.png" },
+// ];
+import { productData } from "./Data";
 
 const ProductList = () => {
   return (
@@ -25,7 +27,7 @@ const ProductList = () => {
         <span>Special Offer</span>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 gap-y-8 md:gap-y-[110px]">
-        {products.map((product) => (
+        {productData.latestProducts.map((product) => (
           <div key={product.id} className="flex flex-col items-center group">
             <div className="w-full max-w-[360px] h-auto bg-white pb-2 relative ">
        
@@ -61,9 +63,10 @@ const ProductList = () => {
               
               <div className="flex flex-col mt-2 px-4">
                 <div className="flex justify-between items-center mt-1">
-                  <h3 className="text-sm sm:text-base font-medium underline underline-offset-4 decoration-[#EEEEFB] decoration-2 text-[#151875]">
-                    {product.name}
-                  </h3>
+                 
+
+                    <Link href={ `/products/${product.id}`}  className="text-sm sm:text-base font-medium underline underline-offset-4 decoration-[#EEEEFB] decoration-2 text-[#151875]">{product.name}</Link>
+                 
                   <div className="flex gap-2 items-center">
                     <p className="font-bold text-[#151875] text-sm sm:text-base font-josefin">{product.price}</p>
                     <p className="line-through text-xs sm:text-sm text-[#FB2448] font-josefin">{product.oldPrice}</p>

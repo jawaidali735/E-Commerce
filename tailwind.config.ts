@@ -13,6 +13,10 @@ const config: Config = {
 			lato: ['Lato', 'sans-serif'],
 			josefin: ['Josefin Sans', 'sans-serif'],
 		},
+		boxShadow: {
+			custom: '0px 0px 25px 10px #F6F4FD',
+			customShadow: '0px 0px 17px 0px #00000040',
+		  },
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

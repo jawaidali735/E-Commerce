@@ -4,6 +4,7 @@ import React from "react";
 import { PiShoppingCartSimple } from "react-icons/pi";
 import { CiHeart } from "react-icons/ci";
 import { GoPerson } from "react-icons/go";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -31,7 +32,8 @@ const Navbar = () => {
           <option value="USD">USD</option>
         </select>
         <div className="flex items-center gap-1 cursor-pointer">
-          <span>Login</span>
+          {/* <span>Login</span> */}
+          <Link href='/login'>Login</Link>
           <GoPerson />
         </div>
         <div className="flex items-center gap-1 cursor-pointer">
@@ -39,8 +41,11 @@ const Navbar = () => {
           <CiHeart />
         </div>
         <div className="flex items-center gap-1 cursor-pointer">
-          <span>Cart</span>
-          <PiShoppingCartSimple />
+          <Link href="/cart">
+          Cart</Link>
+         
+          <Link href="/cart">
+          <PiShoppingCartSimple /></Link>
         </div>
       </div>
     </div>
